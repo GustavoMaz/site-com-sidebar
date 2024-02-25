@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <title>Guia Viajante</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="var(--color-red)" class="bi bi-airplane-fill" viewBox="0 0 16 16" class="logo">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
+            </svg>
+
+            <nav>
+                <ul id="nav-list">
+                    <li class="nav-item">
+                        <a href="#">Início</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#">Destinos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#">Dicas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">Contato</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <form>
+            <h1>Login</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome completo" class="typing-input">
+            <span class="invalid msg">Mínimo 3 caractéres</span>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" class="typing-input">
+            <span class="invalid msg">Digite um e-mail válido</span>
+
+            <label for="password">Senha</label>
+            <input type="text" name="password" id="password" placeholder="Digite sua senha" class="typing-input">
+            <span class="invalid msg">Mínimo 8 caractéres</span>
+
+            <label for="password-confirm">Confirmar senha</label>
+            <input type="text" name="password-confirm" id="password-confirm" placeholder="Repita sua senha" class="typing-input">
+            <span class="invalid msg">As senhas não coincidem</span>
+
+            <label for="about">Conte um pouco sobre você</label>
+            <textarea name="about" id="about" cols="30" rows="10" placeholder="Conte um pouco sobre você para que possamos dar melhores recomendações" class="typing-input"></textarea>
+
+            <label for="sex">Sexo</label> <br>
+            <input type="radio" name="sex" id="m">
+            <label for="m">Masculino</label>
+            <input type="radio" name="sex" id="f">
+            <label for="f">Feminino</label>
+            <input type="radio" name="sex" id="o">
+            <label for="o">Outro</label>
+            <input type="radio" name="sex" id="n">
+            <label for="n">Prefiro não dizer</label>
+
+            <br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Concluir">
+        </form>
+    </body>
+</html>

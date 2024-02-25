@@ -1,0 +1,38 @@
+:root {
+    --color-red: hsl(4, 85%, 56%);
+    --color-dark-red: hsl(0, 79%, 41%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.typing-input {
+    display: block;
+}
+
+.invalid.msg {
+    display: none;
+}
+
+textarea {
+    resize: none;
+}

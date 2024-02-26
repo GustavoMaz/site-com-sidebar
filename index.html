@@ -41,7 +41,7 @@
             </div>
         </header>
 
-        <div id="form-container" >
+        <div id="form-container">
             <form>
                 <h1>Login</h1>
                 
@@ -77,20 +77,28 @@
                 <div class="input-container">
                     <label for="sex">Sexo</label> <br>
                     <div id="rad-container">
-                        <input type="radio" name="sex" id="m">
-                        <label for="m">Masculino</label>
-                        <input type="radio" name="sex" id="f">
-                        <label for="f">Feminino</label>
-                        <input type="radio" name="sex" id="o">
-                        <label for="o">Outro</label>
-                        <input type="radio" name="sex" id="n">
-                        <label for="n">Prefiro não dizer</label>
+                        <div class="rad-input">
+                            <input type="radio" name="sex" id="m">
+                            <label for="m">Masculino</label>
+                        </div>
+                        <div class="rad-input">
+                            <input type="radio" name="sex" id="f">
+                            <label for="f">Feminino</label>
+                        </div>
+                        <div class="rad-input">
+                            <input type="radio" name="sex" id="o">
+                            <label for="o">Outro</label>
+                        </div>
+                        <div class="rad-input">
+                            <input type="radio" name="sex" id="n">
+                            <label for="n">Prefiro não dizer</label>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <div class="input-container" id="button-container">
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Concluir">
+                    <input type="reset" value="Limpar" class="btn">
+                    <input type="submit" value="Concluir" class="btn">
                 </div>
             </form>
         </div>

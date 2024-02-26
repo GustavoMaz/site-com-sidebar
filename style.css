@@ -1,6 +1,7 @@
 :root {
     --color-red: hsl(4, 85%, 56%);
     --color-dark-red: hsl(0, 79%, 41%);
+    --color-light-gray: hsl(0, 0%, 77%);
 }
 
 body {
@@ -8,14 +9,28 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    background-color: var(--color-light-gray);
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header div {
+    width: 768px;
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: space-between;
-    width: 60vw;
+}
+
+svg.log {
+    min-width: 64px;
+    min-height: 64px;
 }
 
 #nav-list {

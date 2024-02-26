@@ -2,6 +2,7 @@
     --color-red: hsl(4, 85%, 56%);
     --color-dark-red: hsl(0, 79%, 41%);
     --color-light-gray: hsl(0, 0%, 77%);
+    --color-gray : #555;
 }
 
 html { font-size: 16px; height: 100%; }
@@ -11,7 +12,6 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
     background-color: var(--color-light-gray);
@@ -34,10 +34,20 @@ header div {
     justify-content: space-between;
 }
 
-svg.logo {
-    min-width: 48px;
-    min-height: 48px;
+#logo-container {
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
 }
+
+svg.logo {
+    width: 48px;
+    height: 48px;
+}
+
+
 
 #nav-list {
     list-style: none;
@@ -56,7 +66,7 @@ svg.logo {
 
 .nav-item a {
     flex-grow: 1;
-    padding: 1rem;
+    padding: 15px;
     background-color: var(--color-red);
     color: white;
     text-align: center;
@@ -64,8 +74,8 @@ svg.logo {
 }
 
 #form-container {
-    width: 100%;
     height: 100%;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -73,13 +83,36 @@ svg.logo {
 }
 
 form {
+    width: 400px;
+    height: 400px;
+    max-width: 736px;
     background-color: white;
     border-radius: 24px;
     padding: 2rem;
-    width: 400px;
-    max-width: 736px;
-
+    margin-top: 10vh;
 }
+
+/* Barra de scroll */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Trilha */
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+/* Cabo */
+::-webkit-scrollbar-thumb {
+    background: var(--color-light-gray); 
+    border-radius: 8px
+}
+
+/* Hover no cabo */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray)
+}
+/* -------------------------- */
 
 .typing-input {
     display: block;

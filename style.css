@@ -3,6 +3,7 @@
     --color-dark-red: hsl(0, 79%, 41%);
     --color-light-gray: hsl(0, 0%, 77%);
     --color-gray : #555;
+    --color-dark-gray: #222;
 }
 
 html { font-size: 16px; height: 100%; }
@@ -82,40 +83,37 @@ svg.logo {
     justify-content: center;
 }
 
+form h1 { color: var(--color-dark-gray); }
+
 form {
     width: 400px;
-    height: 400px;
     max-width: 736px;
     background-color: white;
     border-radius: 24px;
     padding: 2rem;
-    margin-top: 10vh;
 }
 
-/* Barra de scroll */
-::-webkit-scrollbar {
-    width: 4px;
+.input-container {
+    margin-top: 1rem;
 }
 
-/* Trilha */
-::-webkit-scrollbar-track {
-    display: none;
+label {
+    color: var(--color-gray);
 }
 
-/* Cabo */
-::-webkit-scrollbar-thumb {
-    background: var(--color-light-gray); 
-    border-radius: 8px
+#rad-container label {
+    color: var(--color-dark-gray);
 }
-
-/* Hover no cabo */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-gray)
-}
-/* -------------------------- */
 
 .typing-input {
     display: block;
+    width: 384px;
+    padding: 8px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid var(--color-gray);
+    font-size: 14px;
+    color: var(--color-dark-gray);
 }
 
 .invalid.msg {
@@ -125,3 +123,24 @@ form {
 textarea {
     resize: none;
 }
+
+
+/* Barra de scroll */
+/*
+::-webkit-scrollbar {
+    width: 4px;
+}*/
+
+/* Trilha *//*
+::-webkit-scrollbar-track {
+    display: none;
+}
+*/
+/* Cabo *//*
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray); 
+    border-radius: 8px
+}
+*/
+/* -------------------------- */
+

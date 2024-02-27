@@ -131,7 +131,7 @@ form {
     margin-top: 1.2rem;
 }    
 
-label {
+label, .msg {
     color: var(--color-gray);
 }        
 
@@ -191,7 +191,9 @@ input[type='submit'] {
 }
 
 .invalid.msg {
-    display: none;
+    margin-top: 4px;
+    font-size: 0.9rem;
+    font-style: italic;
 }    
 
 textarea {

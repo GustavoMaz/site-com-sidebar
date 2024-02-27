@@ -42,6 +42,8 @@
         </header>
 
         <div id="form-container">
+            <div id="form-top"> <!--Serve para impedir da barra de scroll ficar com as pontas fora do formulário-->
+            </div>
             <form>
                 <h1>Login</h1>
                 
@@ -50,30 +52,25 @@
                     <input type="text" name="name" id="name" placeholder="Digite seu nome completo" class="typing-input">
                     <span class="invalid msg">Mínimo 3 caractéres</span>
                 </div>
-
                 <div class="input-container">
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" class="typing-input">
                     <span class="invalid msg">Digite um e-mail válido</span>
                 </div class="input-container">
-
                 <div class="input-container">
                     <label for="password">Senha</label>
                     <input type="text" name="password" id="password" placeholder="Digite sua senha" class="typing-input">
                     <span class="invalid msg">Mínimo 8 caractéres</span>
                 </div>
-
                 <div class="input-container">
                     <label for="password-confirm">Confirmar senha</label>
                     <input type="text" name="password-confirm" id="password-confirm" placeholder="Repita sua senha" class="typing-input">
                     <span class="invalid msg">As senhas não coincidem</span>
                 </div>
-
                 <div class="input-container">
                     <label for="about">Conte um pouco sobre você</label>
                     <textarea name="about" id="about" cols="30" rows="10" placeholder="Conte um pouco sobre você para que possamos dar melhores recomendações" class="typing-input"></textarea>
                 </div>
-
                 <div class="input-container">
                     <label for="sex">Sexo</label> <br>
                     <div id="rad-container">
@@ -101,6 +98,8 @@
                     <input type="submit" value="Concluir" class="btn">
                 </div>
             </form>
+            <div id="form-bottom">
+            </div>
         </div>
     </body>
 </html>

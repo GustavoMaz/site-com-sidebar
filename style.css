@@ -1,9 +1,9 @@
 :root {
     --color-red: hsl(4, 85%, 56%);
-    --color-dark-red: hsl(0, 79%, 41%);
+    --color-dark-red: hsl(0, 82%, 15%);
     --color-light-gray: hsl(0, 0%, 77%);
-    --color-gray : #555;
-    --color-dark-gray: #222;
+    --color-gray : hsl(0, 0%, 33%);
+    --color-dark-gray: hsl(0, 0%, 13%);
 }
 
 html { font-size: 16px; height: 100%; }
@@ -198,6 +198,10 @@ button {
     border-color: var(--color-red);
 }
 
+.invalid:not(.msg):hover {
+    border-color: var(--color-dark-red);
+}
+
 .invalid:not(.msg)::placeholder { color: var(--color-red); }
 
 .invalid.msg {
@@ -210,6 +214,4 @@ button {
 
 textarea {
     resize: none;
-}    
-
-
+}

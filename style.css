@@ -1,9 +1,9 @@
 :root {
-    --color-red: hsl(4, 85%, 56%);
-    --color-dark-red: hsl(0, 82%, 15%);
-    --color-light-gray: hsl(0, 0%, 77%);
-    --color-gray : hsl(0, 0%, 33%);
-    --color-dark-gray: hsl(0, 0%, 13%);
+    --color-red: #ee3c2f;
+    --color-dark-red: #460707;
+    --color-light-gray: #c4c4c4;
+    --color-gray : #545454;
+    --color-dark-gray: #212121;
 }
 
 html { font-size: 16px; height: 100%; }
@@ -33,6 +33,7 @@ header div {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo-container {
@@ -85,19 +86,20 @@ svg {
 form h1 { color: var(--color-dark-gray); }
 
 form {
-    width: 400px;
     max-width: 736px;
     background-color: white;
-    padding: 0 2rem;
-    
     overflow-y: scroll;
     height: 600px;
 }    
 
+form, #form-top, #form-bottom {
+    padding: 0 2rem;
+    width: 30vw;
+    min-width: 400px;
+}
+
 #form-top, #form-bottom {
     height: 2rem;
-    width: 464px;
-    background-color: white;
 }
 
 #form-top {
@@ -107,6 +109,7 @@ form {
 
 #form-bottom {
     border-radius: 0 0 24px 24px;
+    background-color: white;
 }
 
 /* Barra de scroll ------------ */
@@ -137,7 +140,7 @@ label, .msg {
 
 .typing-input, .invalid:not(.msg) {
     display: block;
-    width: 382px;
+    width: 95%;
     padding: 8px;
     border-radius: 16px;
     outline: none;
@@ -222,6 +225,10 @@ textarea {
 
 /* Layout mobile */
 @media only screen and (max-width: 768px) {
+    form, #form-top, #form-bottom {
+        width: 80%;
+    }
+    #form-top, #form-bottom { padding: 0 2rem; }
     #btnsidebar {
         display: inline;
         background: none; 
@@ -238,13 +245,24 @@ textarea {
         transition: .3s;
     }
 
+    header {
+        height: 10vh;
+    }
+
     nav {
+        transition: 0.3s;
         position: absolute;
-        left: -20vw;
+        left: -30vw;
+        height: 90vh;
+        background-color: white;
+        top: 10vh;
+        padding: 0 2rem;
+        z-index: 1;
     }
 
     #nav-list {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         row-gap: 1rem;
     }
 }

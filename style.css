@@ -184,7 +184,7 @@ input[type='radio']{
     filter:opacity(80%);
 }
 
-input[type='submit'] {
+button {
     background-color: var(--color-red);
     color: white;
     border: none;

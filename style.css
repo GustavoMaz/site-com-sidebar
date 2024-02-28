@@ -135,7 +135,7 @@ label, .msg {
     color: var(--color-gray);
 }        
 
-.typing-input {
+.typing-input, .invalid:not(.msg) {
     display: block;
     width: 382px;
     padding: 8px;
@@ -190,9 +190,21 @@ button {
     border: none;
 }
 
+.msg {
+    display: none;
+}
+
+.invalid:not(.msg)  { 
+    border-color: var(--color-red);
+}
+
+.invalid:not(.msg)::placeholder { color: var(--color-red); }
+
 .invalid.msg {
+    display: block;
     margin-top: 4px;
     font-size: 0.9rem;
+    color: var(--color-red);
     font-style: italic;
 }    
 

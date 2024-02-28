@@ -43,7 +43,7 @@ header div {
     height: fit-content;
 }
 
-svg.logo {
+svg {
     width: 48px;
     height: 48px;
 }
@@ -170,7 +170,7 @@ input[type='radio']{
     justify-content: space-between;
 }
 
-.btn {
+form .btn {
     padding: 1rem;
     width: 120px;
     border-radius: 100px;
@@ -181,10 +181,10 @@ input[type='radio']{
 
 .btn:hover, .nav-item a:hover {
     cursor: pointer;
-    filter:opacity(80%);
+    filter:brightness(85%);
 }
 
-button {
+nav button, #btnsubmit {
     background-color: var(--color-red);
     color: white;
     border: none;
@@ -214,4 +214,37 @@ button {
 
 textarea {
     resize: none;
+}
+
+#btnsidebar {
+    display: none;
+}
+
+/* Layout mobile */
+@media only screen and (max-width: 768px) {
+    #btnsidebar {
+        display: inline;
+        background: none; 
+        border: none;
+        border-radius: 100%;
+        padding: 0;
+        margin: 0;
+        height: 64px;
+        width: 64px;
+    }
+
+    #btnsidebar:hover {
+        background-color: rgba(196, 196, 196, 0.5);
+        transition: .3s;
+    }
+
+    nav {
+        position: absolute;
+        left: -20vw;
+    }
+
+    #nav-list {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
 }

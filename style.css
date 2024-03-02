@@ -78,6 +78,7 @@ svg {
     height: 100%;
     width: 100%;
 
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +98,6 @@ form {
 .form-element {
     padding: 0 2rem;
     width: 30vw;
-    min-width: 400px;
 }
 
 #form-top, #form-bottom {

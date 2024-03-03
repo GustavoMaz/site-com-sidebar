@@ -140,7 +140,7 @@ label, .msg {
     color: var(--color-gray);
 }        
 
-.typing-input, .invalid:not(.msg) {
+.typing-input {
     display: block;
     width: 95%;
     padding: 8px;
@@ -199,15 +199,15 @@ nav button, #btnsubmit {
     display: none;
 }
 
-.invalid:not(.msg)  { 
+.typing-input.invalid  { 
     border-color: var(--color-red);
 }
 
-.invalid:not(.msg):hover {
+.typing-input.invalid:hover {
     border-color: var(--color-dark-red);
 }
 
-.invalid:not(.msg)::placeholder { color: var(--color-red); }
+.typing-input.invalid::placeholder { color: var(--color-red); }
 
 .invalid.msg {
     display: block;

@@ -244,7 +244,7 @@ textarea {
         box-sizing: border-box;
         padding: 0 2rem;
         width: 100%;
-        min-width: none;
+        min-width: 100%;
     }
 
     #btnsidebar {

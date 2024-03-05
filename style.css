@@ -235,14 +235,13 @@ textarea {
     #header-inside {
         width: 100%;
         min-width: 100%;
-        padding: 0;
         box-sizing: border-box;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     .form-element {
         box-sizing: border-box;
-        padding: 0 2rem;
+        padding: 0 1rem;
         width: 100%;
         min-width: 100%;
     }
@@ -263,7 +262,7 @@ textarea {
         transition: .3s;
     }
 
-    header {
+    header, #header-inside {
         height: 10vh;
     }
 
@@ -282,7 +281,7 @@ textarea {
         left: -100vw;
         height: 90vh;
         background-color: white;
-        top: 9vh;
+        top: 10vh;
         padding: 0 2rem;
         z-index: 1;
     }
